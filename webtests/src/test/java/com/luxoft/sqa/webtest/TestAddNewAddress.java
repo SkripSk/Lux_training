@@ -56,7 +56,7 @@ public class TestAddNewAddress {
         driver.findElement(By.name("user")).sendKeys(userName);
         driver.findElement(By.name("pass")).clear();
         driver.findElement(By.name("pass")).sendKeys(password);
-        driver.findElement(By.xpath("//*[@id=\"LoginForm\"]/input[3]")).click();
+        driver.findElement(By.cssSelector("#LoginForm > input[type=\"submit\"]:nth-child(7)")).click();
     }
 
     @AfterMethod
