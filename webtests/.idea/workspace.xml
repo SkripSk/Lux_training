@@ -29,16 +29,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestAddNewAddress.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestAddNewAddress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestAddNewAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
               <folding>
-                <element signature="e#2183#2184#0" expanded="true" />
-                <element signature="e#2276#2277#0" expanded="true" />
-                <element signature="e#2726#2727#0" expanded="true" />
-                <element signature="e#2755#2756#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1528#1529#0" expanded="true" />
+                <element signature="e#1621#1622#0" expanded="true" />
+                <element signature="e#2073#2074#0" expanded="true" />
+                <element signature="e#2102#2103#0" expanded="true" />
+                <element signature="e#2368#2369#0" expanded="true" />
+                <element signature="e#2427#2428#0" expanded="true" />
+                <element signature="e#2460#2461#0" expanded="true" />
+                <element signature="e#2553#2554#0" expanded="true" />
+                <element signature="e#2929#2930#0" expanded="true" />
+                <element signature="e#2994#2995#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestEditAddress.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestEditAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,16 +76,9 @@
       <file leaf-file-name="TestDeleteAllAddresses.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteAllAddresses.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-                <element signature="e#1142#1143#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
-                <element signature="e#1714#1715#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,6 +91,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>up</find>
+      <find>fill</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -363,8 +391,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestAddressBook.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteFirstAddress.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteAllAddress.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteAllAddresses.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestAddNewAddress.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteAllAddresses.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestEditAddress.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestBase.java" />
       </list>
     </option>
   </component>
@@ -452,6 +482,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="extract.method.default.visibility" value="public" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.luxoft.sqa.webtest" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -464,7 +499,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestEditAddress">
     <configuration name="TestAddNewAddress" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -529,7 +564,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestAddNewAddress.testCreateNewProject" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDeleteAllAddresses" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.luxoft.sqa.webtest.*" />
@@ -541,8 +576,40 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.luxoft.sqa.webtest" />
-      <option name="MAIN_CLASS_NAME" value="com.luxoft.sqa.webtest.TestAddNewAddress" />
-      <option name="METHOD_NAME" value="testCreateNewProject" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.sqa.webtest.TestDeleteAllAddresses" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="TestDeleteAllAddresses.testDeleteAllAddresses" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.luxoft.sqa.webtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="webtests_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.luxoft.sqa.webtest" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.sqa.webtest.TestDeleteAllAddresses" />
+      <option name="METHOD_NAME" value="testDeleteAllAddresses" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -561,7 +628,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestDeleteAllAddresses.testAddNewAddress" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEditAddress" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.luxoft.sqa.webtest.*" />
@@ -573,10 +640,10 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.luxoft.sqa.webtest" />
-      <option name="MAIN_CLASS_NAME" value="com.luxoft.sqa.webtest.TestDeleteAllAddresses" />
-      <option name="METHOD_NAME" value="testAddNewAddress" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.sqa.webtest.TestEditAddress" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -673,18 +740,20 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress.testCreateNewProject" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress.testAddNewAddress" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses.testAddNewAddress" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress.testAddNewAddress" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses.testDeleteAllAddresses" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TestEditAddress" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses.testAddNewAddress" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress.testAddNewAddress" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress.testCreateNewProject" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestEditAddress" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress.testAddNewAddress" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses.testDeleteAllAddresses" />
       </list>
     </recent_temporary>
   </component>
@@ -702,40 +771,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAddressBook - 2017.10.12 at 10h 39m 21s.xml">
-      <configuration name="TestAddressBook" configurationId="TestNG" />
+    <history-entry file="TestAddNewAddress - 2017.10.12 at 13h 07m 01s.xml">
+      <configuration name="TestAddNewAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAddressBook - 2017.10.12 at 11h 46m 52s.xml">
-      <configuration name="TestAddressBook" configurationId="TestNG" />
+    <history-entry file="TestDeleteAllAddresses - 2017.10.12 at 12h 52m 39s.xml">
+      <configuration name="TestDeleteAllAddresses" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAddressBook_testLogin - 2017.10.12 at 10h 40m 19s.xml">
-      <configuration name="TestAddressBook.testLogin" configurationId="TestNG" />
+    <history-entry file="TestDeleteAllAddresses - 2017.10.12 at 12h 54m 32s.xml">
+      <configuration name="TestDeleteAllAddresses" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAddressBook_testLogin - 2017.10.12 at 10h 46m 32s.xml">
-      <configuration name="TestAddressBook.testLogin" configurationId="TestNG" />
+    <history-entry file="TestDeleteAllAddresses - 2017.10.12 at 12h 55m 05s.xml">
+      <configuration name="TestDeleteAllAddresses" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDeleteAllAddress_testAddNewAddress - 2017.10.12 at 12h 27m 27s.xml">
-      <configuration name="TestDeleteAllAddress.testAddNewAddress" configurationId="TestNG" />
+    <history-entry file="TestDeleteAllAddresses - 2017.10.12 at 13h 07m 18s.xml">
+      <configuration name="TestDeleteAllAddresses" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDeleteAllAddress_testAddNewAddress - 2017.10.12 at 12h 31m 16s.xml">
-      <configuration name="TestDeleteAllAddress.testAddNewAddress" configurationId="TestNG" />
+    <history-entry file="TestEditAddress - 2017.10.12 at 13h 30m 13s.xml">
+      <configuration name="TestEditAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDeleteAllAddress_testAddNewAddress - 2017.10.12 at 12h 33m 43s.xml">
-      <configuration name="TestDeleteAllAddress.testAddNewAddress" configurationId="TestNG" />
+    <history-entry file="TestEditAddress - 2017.10.12 at 13h 31m 56s.xml">
+      <configuration name="TestEditAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDeleteFirstAddress_testAddNewAddress - 2017.10.12 at 11h 59m 34s.xml">
-      <configuration name="TestDeleteFirstAddress.testAddNewAddress" configurationId="TestNG" />
+    <history-entry file="TestEditAddress - 2017.10.12 at 13h 32m 25s.xml">
+      <configuration name="TestEditAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDeleteFirstAddress_testAddNewAddress - 2017.10.12 at 12h 05m 02s.xml">
-      <configuration name="TestDeleteFirstAddress.testAddNewAddress" configurationId="TestNG" />
+    <history-entry file="TestEditAddress - 2017.10.12 at 13h 34m 41s.xml">
+      <configuration name="TestEditAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDeleteFirstAddress_testAddNewAddress - 2017.10.12 at 12h 25m 32s.xml">
-      <configuration name="TestDeleteFirstAddress.testAddNewAddress" configurationId="TestNG" />
+    <history-entry file="TestEditAddress - 2017.10.12 at 13h 40m 23s.xml">
+      <configuration name="TestEditAddress" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -745,7 +813,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5123859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5123859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -786,12 +854,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2276#2277#0" expanded="true" />
-            <element signature="e#2726#2727#0" expanded="true" />
-            <element signature="e#2755#2756#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -807,12 +870,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2276#2277#0" expanded="true" />
-            <element signature="e#2726#2727#0" expanded="true" />
-            <element signature="e#2755#2756#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -845,28 +903,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteAllAddresses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestAddNewAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
           <folding>
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2276#2277#0" expanded="true" />
-            <element signature="e#2726#2727#0" expanded="true" />
-            <element signature="e#2755#2756#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
+            <element signature="e#2102#2103#0" expanded="true" />
+            <element signature="e#2368#2369#0" expanded="true" />
+            <element signature="e#2427#2428#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2929#2930#0" expanded="true" />
+            <element signature="e#2994#2995#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestEditAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
