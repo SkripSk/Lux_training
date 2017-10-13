@@ -31,6 +31,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TestEditAddress.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestEditAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDeleteAllAddresses.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteAllAddresses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,18 +88,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestEditAddress.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestEditAddress.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NovigationHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/framework/NovigationHelper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,17 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestDeleteAllAddresses.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteAllAddresses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SessionHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/framework/SessionHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -573,7 +573,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestAddNewAddress">
+  <component name="RunManager" selected="TestNG.TestDeleteAllAddresses">
     <configuration name="TestAddNewAddress" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -823,9 +823,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses" />
         <item index="1" class="java.lang.String" itemvalue="TestNG.TestEditAddress" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.TestAddNewAddress.testAddNewAddress" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.TestDeleteAllAddresses.testDeleteAllAddresses" />
       </list>
@@ -854,14 +854,11 @@
     <history-entry file="TestAddNewAddress - 2017.10.13 at 10h 51m 07s.xml">
       <configuration name="TestAddNewAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDeleteAllAddresses - 2017.10.12 at 12h 55m 05s.xml">
-      <configuration name="TestDeleteAllAddresses" configurationId="TestNG" />
+    <history-entry file="TestAddNewAddress - 2017.10.13 at 11h 09m 42s.xml">
+      <configuration name="TestAddNewAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDeleteAllAddresses - 2017.10.12 at 13h 07m 18s.xml">
+    <history-entry file="TestDeleteAllAddresses - 2017.10.13 at 11h 10m 23s.xml">
       <configuration name="TestDeleteAllAddresses" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestEditAddress - 2017.10.12 at 13h 30m 13s.xml">
-      <configuration name="TestEditAddress" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestEditAddress - 2017.10.12 at 13h 31m 56s.xml">
       <configuration name="TestEditAddress" configurationId="TestNG" />
@@ -873,6 +870,9 @@
       <configuration name="TestEditAddress" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestEditAddress - 2017.10.12 at 13h 40m 23s.xml">
+      <configuration name="TestEditAddress" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestEditAddress - 2017.10.13 at 11h 10m 06s.xml">
       <configuration name="TestEditAddress" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1036,16 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestAddNewAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1056,6 +1046,46 @@
             <element signature="e#307#308#0" expanded="true" />
             <element signature="e#353#354#0" expanded="true" />
             <element signature="e#379#380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/framework/NovigationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/framework/SessionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestAddNewAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1087,41 +1117,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/framework/NovigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/webtest/TestDeleteAllAddresses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/luxoft/sqa/framework/SessionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
