@@ -3,15 +3,14 @@ package com.luxoft.sqa.framework;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class NovigationHelper {
-    private WebDriver driver;
+public class NovigationHelper extends BaseHelper{
 
     public NovigationHelper(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void goToAddAddress() {
-        driver.findElement(By.cssSelector("#nav > ul > li:nth-child(2) > a")).click();
+        click(By.cssSelector("#nav > ul > li:nth-child(2) > a"));
     }
 
     public void goToHome() {
