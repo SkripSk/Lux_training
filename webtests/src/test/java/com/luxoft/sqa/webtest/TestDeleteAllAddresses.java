@@ -6,8 +6,8 @@ public class TestDeleteAllAddresses extends TestBase{
 
     @Test
     public void testDeleteAllAddresses() {
-        goToHome();
-        selectAllAddresses();
-        deletedAllAddresses();
+        app.getNovigationHelper().goToHome();
+        app.getContactHelper().selectAllAddresses();
+        app.getContactHelper().deletedAllAddresses();
     }
 }

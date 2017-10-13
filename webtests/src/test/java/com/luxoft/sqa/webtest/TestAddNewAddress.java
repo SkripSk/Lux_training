@@ -7,8 +7,9 @@ public class TestAddNewAddress extends TestBase{
 
     @Test
     public void testAddNewAddress(){
-        goToAddAddress();
-        fillAddAddressForm(new NewAddressData("Lena", "Lera", "Skrip", "","+7(961)9592975"));
-        submitAddAddressCreation();
+        app.getNovigationHelper().goToAddAddress();
+        app.getContactHelper().fillAddAddressForm(new NewAddressData("Lena", "Lera", "Skrip", "","+7(961)9592975"));
+        app.getContactHelper().submitAddAddressCreation();
+        app.getSessionHelper().logout();
     }
 }

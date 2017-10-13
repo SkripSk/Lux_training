@@ -7,10 +7,10 @@ public class TestEditAddress extends TestBase {
 
     @Test
     public void testEditAddress(){
-        goToHome();
-        selectFirstAddress();
-        clickEditButton();
-        fillAddAddressForm(new NewAddressData("dfsdfsfd","asdfsdfdsf","sdfsdf","","541654654654"));
-        updateAddress();
+        app.getNovigationHelper().goToHome();
+        app.getContactHelper().selectFirstAddress();
+        app.getContactHelper().clickEditButton();
+        app.getContactHelper().fillAddAddressForm(new NewAddressData("dfsdfsfd","asdfsdfdsf","sdfsdf","","541654654654"));
+        app.getContactHelper().updateAddress();
     }
 }
