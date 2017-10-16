@@ -2,6 +2,8 @@ package com.luxoft.sqa.framework;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
 
 public class Application {
 
@@ -10,10 +12,20 @@ public class Application {
     SessionHelper sessionHelper;
     ContactHelper contactHelper;
     NovigationHelper novigationHelper;
+    String browser;
+
+    public Application(String browser) {
+        this.browser = browser;
+    }
 
     public void init() {
-        System.setProperty("webdriver.chrome.driver", "lib/drivers/chromedriver.exe");
-        driver = new ChromeDriver();
+        if (browser == BrowserType.CHROME){
+            driver = new ChromeDriver();
+        } else if (browser == BrowserType.IE) {
+            driver = new InternetExplorerDriver();
+        }
+//        System.setProperty("webdriver.chrome.driver", "lib/drivers/chromedriver.exe");
+//        driver = new ChromeDriver();
 
         contactHelper = new ContactHelper(driver);
         sessionHelper = new SessionHelper(driver);
