@@ -3,8 +3,9 @@ package com.luxoft.sqa.framework;
 import com.luxoft.sqa.model.NewAddressData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
-public class ContactHelper extends BaseHelper{
+public class ContactHelper extends BaseHelper {
 
     public ContactHelper(WebDriver driver) {
         super(driver);
@@ -14,11 +15,15 @@ public class ContactHelper extends BaseHelper{
         click(By.cssSelector("#content > form > input[type=\"submit\"]:nth-child(87)"));
     }
 
-    public void fillAddAddressForm(NewAddressData newAddressData) {
+    public void fillAddAddressForm(NewAddressData newAddressData, boolean creation) {
         type(By.name("firstname"), newAddressData.getFirstName());
         type(By.name("middlename"), newAddressData.getMiddleNameOrInital());
         type(By.name("lastname"), newAddressData.getLastName());
         type(By.name("mobile"), newAddressData.getTelephoneMobile());
+        if (isElementPresent(By.name("new_group"))
+                && creation) {
+            new Select(driver.findElement(By.name("new_group"))).selectByIndex(0);
+        }
     }
 
     public void deletedAllAddresses() {
@@ -40,5 +45,17 @@ public class ContactHelper extends BaseHelper{
 
     public void selectFirstAddress() {
         click(By.name("selected[]"));
+    }
+
+    public boolean isThereContact() {
+        return isElementPresent(By.name("selected[]"));
+    }
+
+    public void createContact(NewAddressData newAddressData, boolean creation) {
+        NovigationHelper app = new NovigationHelper(driver);
+        app.goToAddAddress();
+        fillAddAddressForm(newAddressData, creation);
+        submitAddAddressCreation();
+        click(By.cssSelector("#content > div > i > a:nth-child(2)"));
     }
 }
