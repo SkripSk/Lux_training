@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class TestBase {
 
-    public Application app = new Application(BrowserType.IE);
+    public Application app = new Application(BrowserType.CHROME);
 
     @BeforeMethod
     public void setup(){

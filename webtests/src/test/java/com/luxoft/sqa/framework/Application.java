@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 
+import java.util.Objects;
+
 public class Application {
 
     WebDriver driver;
@@ -19,13 +21,11 @@ public class Application {
     }
 
     public void init() {
-        if (browser == BrowserType.CHROME){
+        if (browser.equals(BrowserType.CHROME)) {
             driver = new ChromeDriver();
-        } else if (browser == BrowserType.IE) {
+        } else if (browser.equals(BrowserType.IE)) {
             driver = new InternetExplorerDriver();
         }
-//        System.setProperty("webdriver.chrome.driver", "lib/drivers/chromedriver.exe");
-//        driver = new ChromeDriver();
 
         contactHelper = new ContactHelper(driver);
         sessionHelper = new SessionHelper(driver);
