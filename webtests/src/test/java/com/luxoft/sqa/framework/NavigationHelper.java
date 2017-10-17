@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
-public class NovigationHelper extends BaseHelper{
+public class NavigationHelper extends BaseHelper{
 
-    public NovigationHelper(WebDriver driver) {
+    public NavigationHelper(WebDriver driver) {
         super(driver);
     }
 
@@ -24,4 +24,12 @@ public class NovigationHelper extends BaseHelper{
         click(By.cssSelector("#nav > ul > li:nth-child(1) > a"));
     }
 
+    public void goToGroupPage() {
+        if (isElementPresent(By.tagName("h1"))
+                && driver.findElement(By.tagName("h1")).getText().equals("Groups")
+                && isElementPresent(By.name("new"))){
+            return;
+        }
+        click(By.linkText("groups"));
+    }
 }

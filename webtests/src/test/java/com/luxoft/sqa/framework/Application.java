@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 
-import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 public class Application {
 
@@ -13,7 +13,8 @@ public class Application {
 
     SessionHelper sessionHelper;
     ContactHelper contactHelper;
-    NovigationHelper novigationHelper;
+    GroupHelper groupHelper;
+    NavigationHelper novigationHelper;
     String browser;
 
     public Application(String browser) {
@@ -26,10 +27,11 @@ public class Application {
         } else if (browser.equals(BrowserType.IE)) {
             driver = new InternetExplorerDriver();
         }
-
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        groupHelper = new GroupHelper(driver);
         contactHelper = new ContactHelper(driver);
         sessionHelper = new SessionHelper(driver);
-        novigationHelper = new NovigationHelper(driver);
+        novigationHelper = new NavigationHelper(driver);
 
         driver.manage().window().maximize();
         driver.get("http://localhost:8080/addressbook/edit.php");
@@ -48,7 +50,11 @@ public class Application {
         return sessionHelper;
     }
 
-    public NovigationHelper getNovigationHelper(){
+    public NavigationHelper getNavigationHelper(){
         return novigationHelper;
+    }
+
+    public GroupHelper getGroupHelper() {
+        return groupHelper;
     }
 }

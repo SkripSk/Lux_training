@@ -7,7 +7,7 @@ public class TestDeleteAllAddresses extends TestBase{
 
     @Test
     public void testDeleteAllAddresses() {
-        app.getNovigationHelper().goToHome();
+        app.getNavigationHelper().goToHome();
         app.getContactHelper().selectAllAddresses();
         app.getContactHelper().deletedContacts();
         int after = app.getContactHelper().getContactsCount();

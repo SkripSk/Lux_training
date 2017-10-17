@@ -52,7 +52,7 @@ public class ContactHelper extends BaseHelper {
     }
 
     public void createContact(NewAddressData newAddressData, boolean creation) {
-        NovigationHelper app = new NovigationHelper(driver);
+        NavigationHelper app = new NavigationHelper(driver);
         app.goToAddAddress();
         fillAddAddressForm(newAddressData, creation);
         submitAddAddressCreation();

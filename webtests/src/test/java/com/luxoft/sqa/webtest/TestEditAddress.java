@@ -8,7 +8,7 @@ public class TestEditAddress extends TestBase {
 
     @Test
     public void testEditAddress(){
-        app.getNovigationHelper().goToHome();
+        app.getNavigationHelper().goToHome();
         int before = app.getContactHelper().getContactsCount();
         if (! app.getContactHelper().isThereContact()){
             app.getContactHelper().createContact(new NewAddressData("Lena", "sdf","sdf",null,"54543213"), true);
