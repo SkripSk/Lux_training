@@ -26,7 +26,7 @@ public class ContactHelper extends BaseHelper {
         }
     }
 
-    public void deletedAllAddresses() {
+    public void deletedContacts() {
         click(By.cssSelector("#content > form:nth-child(10) > div:nth-child(8) > input[type=\"button\"]"));
         driver.switchTo().alert().accept();
     }
@@ -57,5 +57,9 @@ public class ContactHelper extends BaseHelper {
         fillAddAddressForm(newAddressData, creation);
         submitAddAddressCreation();
         click(By.cssSelector("#content > div > i > a:nth-child(2)"));
+    }
+
+    public int getContactsCount() {
+        return driver.findElements(By.name("selected[]")).size();
     }
 }

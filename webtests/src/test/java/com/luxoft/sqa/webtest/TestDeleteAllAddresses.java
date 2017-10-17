@@ -1,5 +1,6 @@
 package com.luxoft.sqa.webtest;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestDeleteAllAddresses extends TestBase{
@@ -8,6 +9,8 @@ public class TestDeleteAllAddresses extends TestBase{
     public void testDeleteAllAddresses() {
         app.getNovigationHelper().goToHome();
         app.getContactHelper().selectAllAddresses();
-        app.getContactHelper().deletedAllAddresses();
+        app.getContactHelper().deletedContacts();
+        int after = app.getContactHelper().getContactsCount();
+        Assert.assertEquals(after,0);
     }
 }
