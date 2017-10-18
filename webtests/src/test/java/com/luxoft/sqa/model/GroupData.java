@@ -1,31 +1,44 @@
 package com.luxoft.sqa.model;
 
-import jdk.nashorn.internal.runtime.OptimisticReturnFilters;
 
 public class GroupData {
 
     String name;
     String header;
     String footer;
-    String id;
+    int id;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
-
+    public void setId(int id) {
         this.id = id;
     }
 
     public GroupData(String name, String header, String footer) {
-        this.id = null;
+        this.id = Integer.MAX_VALUE;
         this.name = name;
         this.header = header;
         this.footer = footer;
     }
 
-    public GroupData(String id, String name, String header, String footer) {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        GroupData groupData = (GroupData) o;
+
+        return name != null ? name.equals(groupData.name) : groupData.name == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return name != null ? name.hashCode() : 0;
+    }
+
+    public GroupData(int id, String name, String header, String footer) {
         this.name = name;
         this.header = header;
         this.footer = footer;
@@ -43,9 +56,5 @@ public class GroupData {
     public String getFooter() {
         return footer;
     }
-
-
-
-
 
 }

@@ -13,27 +13,6 @@ import java.util.List;
 public class GroupHelper extends BaseHelper {
 
     String name;
-    String header;
-    String footer;
-    String id;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        GroupHelper that = (GroupHelper) o;
-
-        if (name != null ? !name.equals(that.name) : that.name != null) return false;
-        return id != null ? id.equals(that.id) : that.id == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (id != null ? id.hashCode() : 0);
-        return result;
-    }
 
     public GroupHelper(WebDriver driver) {
         super(driver);
@@ -78,6 +57,14 @@ public class GroupHelper extends BaseHelper {
 
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void createGroup(GroupData groupData) {
         initGroupCreation();
         fillGroupForm(groupData);
@@ -90,19 +77,12 @@ public class GroupHelper extends BaseHelper {
         return driver.findElements(By.name("selected[]")).size();
     }
 
-    @Override
-    public String toString() {
-        return "GroupHelper{" +
-                "name='" + name + '\'' +
-                '}';
-    }
-
     public List<GroupData> getGroupList() {
         List<GroupData> groups = new ArrayList<GroupData>();
         List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
         for (WebElement element: elements) {
             String name = element.getText();
-            String id = element.findElement(By.tagName("input")).getAttribute("value");
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             GroupData group = new GroupData(id, name, null, null);
             groups.add(group);
         }

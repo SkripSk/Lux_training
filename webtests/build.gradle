@@ -8,3 +8,7 @@ dependencies{
     testCompile 'org.testng:testng:6.11'
     testCompile 'org.seleniumhq.selenium:selenium-java:3.6.0'
 }
+
+test{
+    useTestNG()
+}

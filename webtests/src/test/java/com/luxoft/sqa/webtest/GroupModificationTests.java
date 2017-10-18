@@ -4,6 +4,7 @@ import com.luxoft.sqa.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 
@@ -19,13 +20,16 @@ public class GroupModificationTests extends TestBase {
         List<GroupData> before = app.getGroupHelper().getGroupList();
         app.getGroupHelper().selectGroup(index - 1);
         app.getGroupHelper().initGroupModification();
-        GroupData data = new GroupData(before.get(index-1).getId(),"1tdtfbf", "1sdfsfsdf", "1sdjhsdghfsdg");
-        app.getGroupHelper().fillGroupForm(data);
+        GroupData group = new GroupData(before.get(index-1).getId(),"1tdtfbf", "1sdfsfsdf", "1sdjhsdghfsdg");
+        app.getGroupHelper().fillGroupForm(group);
         app.getGroupHelper().submitGroupModification();
         app.getGroupHelper().returnToGroupPage();
         List<GroupData> after = app.getGroupHelper().getGroupList();
         before.remove(index - 1);
-        before.add(data);
-        Assert.assertEquals(new HashSet<Object>(before) , new HashSet<Object>(after));
+        before.add(group);
+        Comparator<? super GroupData> byId = (Comparator<GroupData>) (o1, o2) -> Integer.compare(o1.getId(),o2.getId());
+        before.sort(byId);
+        after.sort(byId);
+        Assert.assertEquals(before , after);
     }
 }
