@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TestAddNewAddress extends TestBase{
 
     @Test
-    public void testAddNewAddress(){
+    public void NewContactTests(){
         app.getNavigationHelper().goToHome();
         int before = app.getContactHelper().getContactsCount();
         app.getNavigationHelper().goToAddAddress();
