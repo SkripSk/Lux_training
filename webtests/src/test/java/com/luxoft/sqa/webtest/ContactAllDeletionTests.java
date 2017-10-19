@@ -3,9 +3,9 @@ package com.luxoft.sqa.webtest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestDeleteAllAddresses extends TestBase{
+public class ContactAllDeletionTests extends TestBase{
 
-    @Test
+    @Test(enabled = false)
     public void testDeleteAllAddresses() {
         app.getNavigationHelper().goToHome();
         app.getContactHelper().selectAllAddresses();

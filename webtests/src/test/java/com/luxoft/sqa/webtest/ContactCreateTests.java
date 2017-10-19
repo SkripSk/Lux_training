@@ -1,20 +1,28 @@
 package com.luxoft.sqa.webtest;
 
-import com.luxoft.sqa.model.NewAddressData;
+import com.luxoft.sqa.model.ContactData;
+import com.luxoft.sqa.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestAddNewAddress extends TestBase{
+import java.util.Comparator;
+import java.util.List;
 
-    @Test
+public class ContactCreateTests extends TestBase{
+
+    @Test(enabled = false)
     public void NewContactTests(){
         app.getNavigationHelper().goToHome();
-        int before = app.getContactHelper().getContactsCount();
+        List<ContactData> before = app.getContactHelper().getContactList();
         app.getNavigationHelper().goToAddAddress();
-        app.getContactHelper().fillAddAddressForm(new NewAddressData("Lena", "Lera", "Skrip", "","+7(961)9592975"),true);
+        ContactData contact = new ContactData("Lena", "Lera", "Skrip", "","+7(961)9592975");
+        app.getContactHelper().fillAddAddressForm(contact,true);
         app.getContactHelper().submitAddAddressCreation();
-        int after = app.getContactHelper().getContactsCount();
-        Assert.assertEquals(after,before + 1);
-        app.getSessionHelper().logout();
+        List<ContactData> after = app.getContactHelper().getContactList();
+        Comparator<? super ContactData> byId = (Comparator<ContactData>) (o1, o2) -> Integer.compare(o1.getId(),o2.getId());
+        before.add(contact);
+        before.sort(byId);
+        after.sort(byId);
+        Assert.assertEquals(before , after);
     }
 }

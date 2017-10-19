@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class GroupHelper extends BaseHelper {
 
@@ -38,10 +40,6 @@ public class GroupHelper extends BaseHelper {
 
     public void deleteGroup() {
         click(By.name("delete"));
-    }
-
-    public void selectGroup(int index) {
-        driver.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void submitGroupModification() {
@@ -77,15 +75,36 @@ public class GroupHelper extends BaseHelper {
         return driver.findElements(By.name("selected[]")).size();
     }
 
-    public List<GroupData> getGroupList() {
-        List<GroupData> groups = new ArrayList<GroupData>();
+    public Set<GroupData> getGroupAll() {
+        Set<GroupData> groups = new HashSet<>();
         List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
         for (WebElement element: elements) {
             String name = element.getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            GroupData group = new GroupData(id, name, null, null);
+            GroupData group = new GroupData()
+                    .setId(id)
+                    .setName(name);
             groups.add(group);
         }
         return groups;
     }
+
+    public void modifyGroup(GroupData group) {
+        selectGroupById(group.);
+        initGroupModification();
+        fillGroupForm(group);
+        submitGroupModification();
+        returnToGroupPage();
+    }
+
+    public void delete(GroupData group) {
+        selectGroupById(group.getId());
+        deleteGroup();
+        returnToGroupPage();
+    }
+
+    private void selectGroupById(int id) {
+        click(By.cssSelector("input[value='" + id + "']"));
+    }
+
 }

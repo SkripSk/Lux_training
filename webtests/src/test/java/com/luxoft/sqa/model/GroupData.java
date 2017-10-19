@@ -6,21 +6,41 @@ public class GroupData {
     String name;
     String header;
     String footer;
-    int id;
+    int id = Integer.MAX_VALUE;
+
+    public GroupData setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public GroupData setHeader(String header) {
+        this.header = header;
+        return this;
+    }
+
+    public GroupData setFooter(String footer) {
+        this.footer = footer;
+        return this;
+    }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public GroupData setId(int id) {
         this.id = id;
+        return this;
+    }
+    public String getName() {
+        return name;
     }
 
-    public GroupData(String name, String header, String footer) {
-        this.id = Integer.MAX_VALUE;
-        this.name = name;
-        this.header = header;
-        this.footer = footer;
+    public String getHeader() {
+        return header;
+    }
+
+    public String getFooter() {
+        return footer;
     }
 
     @Override
@@ -36,25 +56,6 @@ public class GroupData {
     @Override
     public int hashCode() {
         return name != null ? name.hashCode() : 0;
-    }
-
-    public GroupData(int id, String name, String header, String footer) {
-        this.name = name;
-        this.header = header;
-        this.footer = footer;
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getHeader() {
-        return header;
-    }
-
-    public String getFooter() {
-        return footer;
     }
 
 }

@@ -2,9 +2,9 @@ package com.luxoft.sqa.webtest;
 
 import org.testng.annotations.Test;
 
-public class TestDeleteContact extends TestBase {
+public class ContactDeletionTests extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void testDeleteContact(){
         app.getNavigationHelper().goToHome();
         app.getContactHelper().selectFirstAddress();

@@ -1,9 +1,14 @@
 package com.luxoft.sqa.framework;
 
-import com.luxoft.sqa.model.NewAddressData;
+import com.luxoft.sqa.model.ContactData;
+import com.luxoft.sqa.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends BaseHelper {
 
@@ -15,7 +20,7 @@ public class ContactHelper extends BaseHelper {
         click(By.cssSelector("#content > form > input[type=\"submit\"]:nth-child(87)"));
     }
 
-    public void fillAddAddressForm(NewAddressData newAddressData, boolean creation) {
+    public void fillAddAddressForm(ContactData newAddressData, boolean creation) {
         type(By.name("firstname"), newAddressData.getFirstName());
         type(By.name("middlename"), newAddressData.getMiddleNameOrInital());
         type(By.name("lastname"), newAddressData.getLastName());
@@ -51,7 +56,7 @@ public class ContactHelper extends BaseHelper {
         return isElementPresent(By.name("selected[]"));
     }
 
-    public void createContact(NewAddressData newAddressData, boolean creation) {
+    public void createContact(ContactData newAddressData, boolean creation) {
         NavigationHelper app = new NavigationHelper(driver);
         app.goToAddAddress();
         fillAddAddressForm(newAddressData, creation);
@@ -61,5 +66,17 @@ public class ContactHelper extends BaseHelper {
 
     public int getContactsCount() {
         return driver.findElements(By.name("selected[]")).size();
+    }
+
+    public List<ContactData> getContactList() {
+        List<ContactData> contacts = new ArrayList<>();
+        List<WebElement> elements = driver.findElements(By.cssSelector("input"));
+        for (WebElement element: elements) {
+            String name = element.getText();
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            ContactData contact = new ContactData(id, name, null, null, null, null);
+            contacts.add(contact);
+        }
+        return null;
     }
 }

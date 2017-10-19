@@ -1,13 +1,37 @@
 package com.luxoft.sqa.model;
 
-public class NewAddressData {
+public class ContactData {
 
-    public NewAddressData(String firstName, String middleNameOrInital, String lastName, String nickname, String telephoneMobile) {
+    String firstName;
+    String middleNameOrInital;
+    String lastName;
+    String nickname;
+    String telephoneMobile;
+    int id;
+
+    public ContactData(String firstName, String middleNameOrInital, String lastName, String nickname, String telephoneMobile) {
         this.firstName = firstName;
         this.middleNameOrInital = middleNameOrInital;
         this.lastName = lastName;
         this.nickname = nickname;
         this.telephoneMobile = telephoneMobile;
+    }
+
+    public ContactData(int id, String firstName, String middleNameOrInital, String lastName, String nickname, String telephoneMobile) {
+        this.firstName = firstName;
+        this.middleNameOrInital = middleNameOrInital;
+        this.lastName = lastName;
+        this.nickname = nickname;
+        this.telephoneMobile = telephoneMobile;
+        this.id = id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getFirstName() {
@@ -30,9 +54,5 @@ public class NewAddressData {
         return telephoneMobile;
     }
 
-    String firstName;
-    String middleNameOrInital;
-    String lastName;
-    String nickname;
-    String telephoneMobile;
+
 }
